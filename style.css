@@ -1,0 +1,169 @@
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        background-color: whitesmoke;
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 550px;
+        min-height: 550px;
+        margin: 6% auto;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+
+    /* header section - the form */
+
+    .header-section {
+        box-shadow: 0 7px 10px -2px rgba(34, 60, 80, 0.2);
+        z-index: 2;
+    }
+
+    .header-form {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        margin: 1.5em 0;
+        justify-content: space-evenly;
+    }
+
+    .color-input,
+    .select-color-scheme,
+    .btn-submit {
+        font-family: inherit;
+        color: #374151;
+        border: 1px solid #D1D5DB;
+        height: 2.8rem;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .color-input {
+        width: 10%;
+    }
+
+    .select-color-scheme {
+        width: 55%;
+        padding: 0 0.25em;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    .color-input:focus,
+    .select-color-scheme:focus,
+    .btn-submit:focus {
+        outline-color: #CECACA;
+        outline-width: thin;
+    }
+
+    .select-color-scheme option,
+    .select-color-scheme option:focus,
+    .select-color-scheme option:hover {
+        background-color: white;
+    }
+
+    .color-input:hover,
+    .select-color-scheme:hover,
+    .btn-submit:hover {
+        background-color: #E7E4E4;
+    }
+
+    .select-color-scheme option {
+        font-size: 0.85rem;
+        background-color: none;
+    }
+
+    .btn-submit {
+        width: 25%;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    /* main section - colors */
+
+    .colors-container {
+        display: flex;
+        flex: auto;
+    }
+
+    .color {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .color-block {
+        flex: auto;
+    }
+
+    .color-name {
+        font-family: inherit;
+        color: #2B283A;
+        margin: 0;
+        padding: 0.7em 0;
+    }
+
+    @media(max-width: 472px) {
+        .header-form {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .color-input {
+            margin: 0.5em 0;
+            width: 15%;
+        }
+
+        .select-color-scheme,
+        .btn-submit {
+            font-size: 1rem;
+            margin: 0.5em 0;
+            text-align: center;
+            width: 50%;
+        }
+
+        .colors-container {
+            flex-direction: column;
+        }
+
+        .color {
+            text-align: left;
+            flex-direction: row;
+            min-height: 4em;
+        }
+
+        .color-name {
+            margin: 0 0.75em;
+            width: 4em;
+            align-self: center;
+        }
+    }
+
+    /* placeholder colors
+
+    .placeholder-color-1 {
+        background-color: #C70521;
+    }
+
+    .placeholder-color-2 {
+        background-color: #FA0629;
+    }
+
+    .placeholder-color-3 {
+        background-color: #FC3753;
+    }
+
+    .placeholder-color-4 {
+        background-color: #FD687E;
+    }
+
+    .placeholder-color-5 {
+        background-color: #FE9AA9;
+    } */

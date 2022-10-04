@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Scheme Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-section">
+            <form class="header-form" id="header-form">
+                <input type='color' id="color-input" class="color-input" value="#FF4D67" />
+                <select class="select-color-scheme" id="select-color-scheme" name="color-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <button class="btn-submit" id="btn-submit" type="submit">Get color scheme</button>
+            </form>
+        </header>
+
+        <main class="colors-container" id="colors-container">
+            <div class="color" id="color">
+                <div class="color-block"></div>
+                <p class="color-name">#C70521</p>
+            </div>
+            <div class="color">
+                <div class="color-block"></div>
+                <p class="color-name">#FA0629</p>
+            </div>
+            <div class="color">
+                <div class="color-block"></div>
+                <p class="color-name">#FC3753</p>
+            </div>
+            <div class="color">
+                <div class="color-block"></div>
+                <p class="color-name">#FD687E</p>
+            </div>
+            <div class="color">
+                <div class="color-block"></div>
+                <p class="color-name">#FE9AA9</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
